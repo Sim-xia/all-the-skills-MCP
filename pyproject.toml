@@ -1,0 +1,45 @@
+[project]
+name = "all-the-skills"
+version = "0.2.0"
+description = "All The Skills - A powerful skill manager MCP server for downloading, managing, and deploying Claude Code Skills across IDEs"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.11"
+keywords = ["mcp", "skills", "claude", "ai", "agent", "skill-manager"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "mcp>=1.0.0",
+]
+
+[project.optional-dependencies]
+yaml = ["PyYAML>=6.0"]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+]
+
+[project.scripts]
+all-the-skills = "skill_cortex.server:main"
+skill-cortex = "skill_cortex.server:main"
+
+[project.urls]
+Homepage = "https://github.com/Sim-xia/all-the-skills-MCP"
+Documentation = "https://github.com/Sim-xia/all-the-skills-MCP#readme"
+Issues = "https://github.com/Sim-xia/all-the-skills-MCP/issues"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["skill_cortex*"]
