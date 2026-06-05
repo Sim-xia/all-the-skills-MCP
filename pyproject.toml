@@ -28,8 +28,8 @@ dev = [
 ]
 
 [project.scripts]
-all-the-skills = "skill_cortex.server:main"
-skill-cortex = "skill_cortex.server:main"
+all-the-skills = "all_the_skills.server:main"
+skill-cortex = "all_the_skills.server:main"
 
 [project.urls]
 Homepage = "https://github.com/Sim-xia/all-the-skills-MCP"
@@ -42,4 +42,4 @@ build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["skill_cortex*"]
+include = ["all_the_skills*"]

@@ -2,13 +2,13 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from skill_cortex.config import AppConfig
-from skill_cortex.index_store import load_index, save_index
-from skill_cortex.frontmatter import make_description_snapshot
-from skill_cortex.models import SkillFrontmatter, SkillRecord
-from skill_cortex.server import _extract_section, _refresh_index_payload, _skill_details_payload
-from skill_cortex.scanner import scan_skills
-from skill_cortex.tags_registry import TagsRegistry
+from all_the_skills.config import AppConfig
+from all_the_skills.index_store import load_index, save_index
+from all_the_skills.frontmatter import make_description_snapshot
+from all_the_skills.models import SkillFrontmatter, SkillRecord
+from all_the_skills.server import _extract_section, _refresh_index_payload, _skill_details_payload
+from all_the_skills.scanner import scan_skills
+from all_the_skills.tags_registry import TagsRegistry
 
 
 def _write_skill(skill_dir: Path, title: str, description: str) -> Path:

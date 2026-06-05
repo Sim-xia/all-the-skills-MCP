@@ -2,9 +2,9 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from skill_cortex.frontmatter import make_description_snapshot
-from skill_cortex.index_store import load_index, save_index
-from skill_cortex.models import ScanResult, SkillFrontmatter, SkillRecord, TreeNode
+from all_the_skills.frontmatter import make_description_snapshot
+from all_the_skills.index_store import load_index, save_index
+from all_the_skills.models import ScanResult, SkillFrontmatter, SkillRecord, TreeNode
 
 
 def _make_scan(skill_file: Path) -> ScanResult:

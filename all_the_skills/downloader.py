@@ -6,8 +6,8 @@ import tempfile
 from pathlib import Path
 from typing import Optional
 
-from skill_cortex.frontmatter import parse_skill_markdown
-from skill_cortex.models import SkillSource
+from all_the_skills.frontmatter import parse_skill_markdown
+from all_the_skills.models import SkillSource
 
 
 class SkillDownloader:

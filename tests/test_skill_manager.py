@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from skill_cortex.skill_manager import create_skill, delete_skill
+from all_the_skills.skill_manager import create_skill, delete_skill
 
 
 def test_create_and_delete_user_skill(tmp_path: Path) -> None:

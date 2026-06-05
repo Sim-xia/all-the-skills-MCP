@@ -3,7 +3,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from skill_cortex.models import ScanResult, SkillFrontmatter, SkillRecord, TreeNode
+from all_the_skills.models import ScanResult, SkillFrontmatter, SkillRecord, TreeNode
 
 
 def _skill_to_dict(skill: SkillRecord) -> dict:

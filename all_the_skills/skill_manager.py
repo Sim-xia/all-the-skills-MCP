@@ -7,7 +7,7 @@ import shutil
 from pathlib import Path
 from typing import Any
 
-from skill_cortex.frontmatter import normalize_tags
+from all_the_skills.frontmatter import normalize_tags
 
 
 def validate_skill_name_part(name: str) -> tuple[bool, str]:

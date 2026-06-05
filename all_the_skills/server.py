@@ -8,17 +8,17 @@ import threading
 from pathlib import Path
 from typing import Any
 
-from skill_cortex.config import AppConfig, load_config
-from skill_cortex.downloader import SkillDownloader
-from skill_cortex.frontmatter import normalize_tags
-from skill_cortex.index_store import load_index, save_index
-from skill_cortex.models import IDEConfig, SkillRecord, SkillSource
-from skill_cortex.registry import RegistryManager
-from skill_cortex.scanner import scan_skills
-from skill_cortex.skill_manager import delete_skill
-from skill_cortex.tags_registry import TagsRegistry, load_tags_registry
+from all_the_skills.config import AppConfig, load_config
+from all_the_skills.downloader import SkillDownloader
+from all_the_skills.frontmatter import normalize_tags
+from all_the_skills.index_store import load_index, save_index
+from all_the_skills.models import IDEConfig, SkillRecord, SkillSource
+from all_the_skills.registry import RegistryManager
+from all_the_skills.scanner import scan_skills
+from all_the_skills.skill_manager import delete_skill
+from all_the_skills.tags_registry import TagsRegistry, load_tags_registry
 
-_logger = logging.getLogger("skill_cortex")
+_logger = logging.getLogger("all_the_skills")
 
 
 def _setup_logging() -> None:
@@ -568,7 +568,7 @@ def main() -> None:
     ) -> dict:
         """创建新技能（兼容接口）"""
         # 为简化，委托给 skill_manager（需要确保它仍存在）
-        from skill_cortex.skill_manager import create_skill
+        from all_the_skills.skill_manager import create_skill
 
         _ensure_state_loaded(config, state, state_lock)
         result = create_skill(

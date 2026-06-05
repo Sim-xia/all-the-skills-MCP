@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from skill_cortex.config import load_config
+from all_the_skills.config import load_config
 
 
 def test_load_config_defaults_include_common_skill_roots(monkeypatch, tmp_path: Path) -> None:

@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from skill_cortex.downloader import SkillDownloader
+from all_the_skills.downloader import SkillDownloader
 
 
 def test_resolve_skill_dir_supports_nested_paths(tmp_path: Path) -> None:

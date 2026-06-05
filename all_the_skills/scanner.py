@@ -3,9 +3,9 @@ from __future__ import annotations
 from pathlib import Path
 from datetime import datetime
 
-from skill_cortex.frontmatter import make_description_snapshot, parse_skill_markdown
-from skill_cortex.models import ScanResult, SkillFrontmatter, SkillRecord, TreeNode
-from skill_cortex.tags_registry import TagsRegistry
+from all_the_skills.frontmatter import make_description_snapshot, parse_skill_markdown
+from all_the_skills.models import ScanResult, SkillFrontmatter, SkillRecord, TreeNode
+from all_the_skills.tags_registry import TagsRegistry
 
 
 def _make_skill_id(source_root: Path, skill_md_path: Path) -> str:

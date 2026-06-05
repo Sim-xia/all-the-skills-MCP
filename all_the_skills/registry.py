@@ -7,7 +7,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import Optional
 
-from skill_cortex.models import (
+from all_the_skills.models import (
     IDEConfig,
     SkillRecord,
     SkillRegistry,

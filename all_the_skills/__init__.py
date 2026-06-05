@@ -7,17 +7,17 @@ A powerful skill manager MCP server for downloading, managing, and deploying Cla
 __version__ = "0.2.0"
 __author__ = "All The Skills Contributors"
 
-from skill_cortex.models import (
+from all_the_skills.models import (
     ScanResult, SkillFrontmatter, SkillRecord, TreeNode,
     IDEConfig, SkillRegistry, SkillSource
 )
-from skill_cortex.config import AppConfig, load_config
-from skill_cortex.scanner import scan_skills
-from skill_cortex.tags_registry import TagsRegistry, load_tags_registry
-from skill_cortex.index_store import load_index, save_index
-from skill_cortex.frontmatter import ParsedFrontmatter, parse_skill_markdown, normalize_tags
-from skill_cortex.registry import RegistryManager
-from skill_cortex.downloader import SkillDownloader
+from all_the_skills.config import AppConfig, load_config
+from all_the_skills.scanner import scan_skills
+from all_the_skills.tags_registry import TagsRegistry, load_tags_registry
+from all_the_skills.index_store import load_index, save_index
+from all_the_skills.frontmatter import ParsedFrontmatter, parse_skill_markdown, normalize_tags
+from all_the_skills.registry import RegistryManager
+from all_the_skills.downloader import SkillDownloader
 
 __all__ = [
     "__version__",
